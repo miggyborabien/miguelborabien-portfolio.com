@@ -229,6 +229,27 @@ body {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+.profile-image-container {
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid rgba(96, 165, 250, 0.3);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-image-container:hover .profile-image {
+  transform: scale(1.02);
+}
+
 .card-header {
   font-size: 0.9rem;
   color: #94a3b8;
